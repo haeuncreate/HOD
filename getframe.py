@@ -62,7 +62,7 @@ for idx, i in enumerate(ss_array):
 
 
     ##### TODO 2 : choose output image file name #####
-    command = "ffmpeg -vsync 2 -ss " + s_time + " -to " + e_time +  " -i '" + input_path + "' -vf thumbnail=" + str(fps) + " 'C:/Users/Snucem_W1/Desktop/VideoToImage/output/변환후 img/O_C" + str(idx+1) + "_%06d.jpg'"
+    command = "ffmpeg -vsync 2 -ss " + s_time + " -to " + e_time +  " -i '" + input_path + "' -vf thumbnail=" + str(fps) + " 'C:/MYPATH/VideoID/images_hangingO/C" + str(idx+1) + "_%06d.jpg'"
     
     # cpu 코어 수에 맞춰 멀티쓰레드 지정 (좀 더 빨라짐)
     # command = "ffmpeg -vsync 2 -ss " + s_time + " -to " + e_time +  " -i '" + input_path + "' -threads 6 -vf thumbnail=" + str(fps) + " 'C:/Users/Snucem_W1/Desktop/VideoToImage/output/변환후 img/O_C" + str(idx+1) + "_%06d.jpg'"
