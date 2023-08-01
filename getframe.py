@@ -36,6 +36,8 @@ array = np.array(worksheet.get_all_values()[2:])
 # input으로부터 video id 구하기
 input_path = args['input']
 video = cv2.VideoCapture(input_path)
+print(video.get(cv2.CAP_PROP_FRAME_WIDTH )) # 프레임 너비
+print(video.get(cv2.CAP_PROP_FRAME_HEIGHT ))
 fps = video.get(cv2.CAP_PROP_FPS)
 video_id = input_path[input_path.find('IP'):-4]
 
